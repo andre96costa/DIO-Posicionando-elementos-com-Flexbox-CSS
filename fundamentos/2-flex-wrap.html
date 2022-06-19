@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex wrap</title>
+    <style>
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 310px;
+        }
+        .flex-container-column{
+            display: flex;
+            height: 100;
+            border: 2px solid black;
+            max-width: 310px;
+            flex-direction: column;
+        }
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .orange{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h3>no wrap</h3>
+    <div class="flex-container nowrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item orange">4</div>
+    </div>
+    <h3>wrap</h3>
+    <div class="flex-container wrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item green">4</div>
+        <div class="item blue">5</div>
+        <div class="item orange">6</div>
+        <div class="item blue">7</div>
+    </div>
+    <br><br><br><br>
+    <h3>wrap-reverse</h3>
+    <br><br><br><br>
+    <div class="flex-container wrap-reverse">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item green">4</div>
+        <div class="item blue">5</div>
+        <div class="item orange">6</div>
+        <div class="item blue">7</div>
+    </div>
+
+    <h2>COLUMN</h2>
+    <h3>no wrap</h3>
+    <div class="flex-container-column nowrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item orange">4</div>
+    </div>
+    <br><br><br>
+    <h3>wrap</h3>
+    <div class="flex-container-column wrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item green">4</div>
+        <div class="item blue">5</div>
+        <div class="item orange">6</div>
+        <div class="item blue">7</div>
+        <div class="item green">8</div>
+    </div>
+    <br><br><br><br>
+    <h3>wrap-reverse</h3>
+    <br><br><br><br>
+    <div class="flex-container-column wrap-reverse">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item green">4</div>
+        <div class="item blue">5</div>
+        <div class="item orange">6</div>
+        <div class="item blue">7</div>
+    </div>
+</body>
+</html>
