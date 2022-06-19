@@ -69,3 +69,6 @@ São os elementos filhos de um flex-container(dentro dele), podem se tornar flex
     OBS: Não irá funcionar caso tenhamos adicionado justify-content ao flex-container.
 ### flex-basis
     É a propriedade que estabelece o tamanho inicial do item antes das distribuição de espaço restante dentro dele, usando como base o conteúdo interno disposto.
+
+## Certificado de conclusão
+> [Certificado de conclusão](https://www.dio.me/certificate/92D0DD74/share)
